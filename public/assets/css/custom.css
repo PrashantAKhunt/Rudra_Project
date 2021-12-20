@@ -1,0 +1,77 @@
+.site-logo img, .site-title img {
+    margin-top: 0;
+}
+.banner-section {
+    position: relative;
+    background-image: url(../images/banner-bg.png) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 9;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.banner-section::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0.702;
+    z-index: 6;
+}
+.banner-title {
+    font-size: 80px;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 4px #000000;
+}
+.video-part {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-height: 615px;
+    background-image: url(../images/Video_part.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.video-part::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0.502;
+}
+.testimonial-section {
+    background-image: radial-gradient(#594857, #2b252f) !important;
+    padding-bottom: 170px;
+}
+
+
+.footer-section {
+    background-image: radial-gradient(#594857, #2b252f) !important;
+    background-position: center;
+    background-size: cover;
+}
+.cmn-btn:hover {
+    color: #ffffff;
+    background-color: #eac085;
+    letter-spacing: 1px;
+}
+:root {
+    --main-color: #eac085;
+    --second-color: #2b252f;
+    --heading-font: 'LouisGeorgeCafeBold';
+    --heading-font2: 'LouisGeorgeCafe';
+    --heading-color: #2b252f;
+    --para-font: 'Open Sans', sans-serif;
+    --para-color: rgba(10, 10, 10, 0.8);
+}

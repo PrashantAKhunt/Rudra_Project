@@ -1,0 +1,33 @@
+<?php
+//in AVAILABILITY_STATUS 6 is actually a mixed leave but for understanding showing leave
+return [
+    
+    'ROLES' => serialize(array(1 => 'Only My View',5=>'Full View',6=>'Partial View', 2 => 'Edit', 3 => 'Add', 4 => 'Delete')),
+	'LEAVE_STATUS' => [1 => 'Pending', 2 => 'Approved', 3 => 'Rejected', 4 => 'Canceled'],
+	'LEAVE_DAY' => [1 => 'Full Day', 2 => 'First Half', 3 => 'Second Half'],
+	'AVAILABILITY_STATUS' => [1 => 'Present', 2 => 'Pending', 3 => 'Leave', 4 => 'Holiday', 5 => 'Weekend',6=>'Leave'],
+	'TRAVEL_VIA' => [1 => 'Company Car', 2 => 'Bus', 3 => 'Train', 4 => 'Flight', 5 => 'Local', 6 => 'Private'],
+	'PAYMENT_TYPE' => ['credit_card' => 'Credit Card', 'debit_card' => 'Debit Card','netbanking' => 'Netbanking', 'cash' => 'Cash', 'cheque' => 'Cheque'],
+    'TOTAL_WORKDAY_WEEK'=>6,'LOAN_TYPE'=>[1=>'Advance Salary',2=>'Normal Loan'],'ADMIN_EXECUTIVE'=>13,
+    'HR_ROLE'=>4,'ACCOUNT_ROLE'=>7,'SuperUser'=>1,'ASSISTANT'=>4,'DRIVER'=>8,'Admin'=>11,'Office_Boy'=>12,'REAL_HR'=>9,'LETTERHEAD_APPROVE'=>17,
+	'OTHER_PROJECT_ID'=>1,
+    'EMP_EXPENSE_APPROVAL'=>['HR','Assistant','Admin','Super Admin','Accountant'],
+    'DRIVER_EXPENSE_APPROVAL'=>['Accountant','Admin','Super Admin'],
+    'LEAVE_APPROVAL'=>['HR','Admin'],
+    'BANK_PAYMENT_APPROVAL'=>['Accountant','Admin','Super Admin'],
+	'VEHICLE_MAINTENANCE_APPROVAL'=>['Admin','Super Admin'],
+    'CASH_PAYMENT_APPROVAL'=>['Admin', 'Accountant','Super Admin'],
+	'ONLINE_PAYMENT_APPROVAL'=>['Accountant','Admin','Super Admin'],
+    'PRE_SIGN_LETTER_HEAD_APPROVAL'=>['Assistant','Super Admin'],
+    'LETTER_HEAD_APPROVAL' => ['Assistant'],
+    'TRAVEL_APPROVAL'=>['Assistant','Admin','Super Admin','Accountant'],
+	'BUDGET_SHEET_APPROVAL'=>['Admin','Super Admin'],
+	'WORK_OFF_ATTENDANCE_APPROVAL'=>['HR','Super Admin'],
+	'CHAT_USER_ADD'=>1000,
+	'CHAT_SERVER'=>'139.59.8.252',
+    'CHAT_PORT'=>'7070',
+    'CHAT_KEY'=>'dsJWWslzMAHvPX5MKT',
+    'CHAT_REST_PORT'=>'9090',
+    'ALLOW_IMEI' => ['356724084750087','862194041007111','866778041868054','860527044142058','863251045622151','352672072578347','863052047505950','356706086461599','867194035586489','355656105947261','865572039610755','354636097425071','358344088403191','863661030996396','866901047454956','868493034857373','866767044169453','865899045225355','868043037196830','354471103987256','862194041007103','860527044142041','863251045622144','352672072578345','863052047505968','867194035586497','355656105947269','865572039610748','354637097425079','358345088403198','863661030996388','866901047454949','868493034857365','866767044169446','865899045225348','868043037196848','354472103987254','351893080371514','351893080371522','359449090149879','359450090149877','869646043898378','357488082950839','357488082950802'],
+    'ATTENDANCE_STATUS' => ['Present' => 1, 'Pending' => 2, 'leave' => 3, 'holiday' => 4, 'weekend' => 5, 'Mixed Leave' => 6],
+];
